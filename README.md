@@ -8,6 +8,13 @@ The app also allows individual contact records to be deleted and provides a refr
 
 > Develop an Android application that retrieves person data in JSON format from an Internet API and stores the retrieved data in an SQLite database.
 
+---
+
+# Screenshots
+
+|  |  |  |
+| :---: | :---: | :---: |
+| <img src="Screenshots/01.png" width="250"> | <img src="Screenshots/02.png" width="250"> | <img src="Screenshots/03.png" width="250"> |
 
 ## 📱 Project Overview
 
