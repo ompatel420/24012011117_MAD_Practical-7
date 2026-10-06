@@ -33,7 +33,16 @@ class MainActivity : AppCompatActivity() {
 
         binding.fabRefresh.setOnClickListener { fetchPersons() }
 
-        if (db.personsCount == 0) fetchPersons() else showPersons()
+        val prefs = getSharedPreferences("app_prefs", MODE_PRIVATE)
+        val isFirstRun = prefs.getBoolean("is_first_run", true)
+
+        if (isFirstRun) {
+            prefs.edit().putBoolean("is_first_run", false).apply()
+            db.deleteAll()
+            showPersons()
+        } else {
+            showPersons()
+        }
     }
 
     private fun showPersons() {
