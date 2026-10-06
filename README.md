@@ -310,3 +310,8 @@ This practical demonstrates the integration of several important Android concept
 - Implementing insert, read, delete, and refresh operations
 - Connecting UI components with View Binding
 - Using a serializable data model
+
+---
+
+**Enrollment No:** 24012011117  
+**Practical:** 07
